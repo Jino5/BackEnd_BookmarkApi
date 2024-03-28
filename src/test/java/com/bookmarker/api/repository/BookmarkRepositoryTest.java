@@ -28,7 +28,7 @@ public class BookmarkRepositoryTest {
     private BookmarkRepository repository;
 
     @Container
-    static PostgreSQLContainer postgresqlContainer = new PostgreSQLContainer("postgres:latest")
+    static PostgreSQLContainer postgresqlContainer = new PostgreSQLContainer("postgres:16.2")
             .withDatabaseName("bookmarkTestdb")
             .withUsername("bookmarkTest")
             .withPassword("bookmarkTest");
